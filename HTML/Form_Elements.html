@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Elements</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Application Form</legend>
+        <h3>Details</h3>
+        <div>
+          <section>
+            <label for="name">First Name:</label>
+            <input
+              type="text"
+              placeholder="Enter your first name"
+              required
+              id="name"
+              name="name"
+            />
+          </section>
+          <br />
+          <section>
+            <label for="surname">Last Name:</label>
+            <input
+              type="text"
+              placeholder="Enter your Last name"
+              id="surname"
+              name="surname"
+            />
+          </section>
+          <br />
+          <section>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              required
+              id="email"
+              name="email"
+            />
+          </section>
+        </div>
+        <h3>Gender</h3>
+        <div>
+          <section>
+            <input type="radio" id="male" name="gender" value="Male" />
+            <label for="male">Male</label>
+          </section>
+          <section>
+            <input type="radio" id="female" name="gender" value="Female" />
+            <label for="female">Female</label>
+          </section>
+          <section>
+            <input type="radio" id="other" name="gender" value="Other" />
+            <label for="other">Other</label>
+          </section>
+        </div>
+        <h3>Languages Known</h3>
+        <div>
+          <section>
+            <input type="checkbox" id="en" name="Language" value="English" />
+            <label for="en">English</label>
+          </section>
+          <section>
+            <input type="checkbox" id="hin" name="Language" value="Hindi" />
+            <label for="hin">Hindi</label>
+          </section>
+          <section>
+            <input type="checkbox" id="mar" name="Language" value="Marathi" />
+            <label for="mar">Marathi</label>
+          </section>
+        </div>
+        <br />
+        <h3>List of Colleges</h3>
+        <div>
+          <label for="college">Select College:</label>
+          <select name="College" id="college">
+            <option value="" selected disabled>Colleges</option>
+            <option value="Raheja">L.S.Raheja</option>
+            <option value="Mithibai">Mithibai College</option>
+            <option value="NM">N.M College</option>
+            <option value="Patkar">Patkar Varde College</option>
+            <option value="MMK">M.M.K College</option>
+          </select>
+        </div>
+        <br />
+        <h3>Documents required</h3>
+        <div>
+          <ol>
+            <li>
+              <h4>10th Marksheet:</h4>
+              <label for="file">Select File</label>
+              <input type="file" id="file" name="File" />
+            </li>
+            <li>
+              <h4>12th Marksheet:</h4>
+              <label for="file">Select File</label>
+              <input type="file" id="file" name="File" />
+            </li>
+            <li>
+              <h4>Aadhar Card:</h4>
+              <label for="file">Select File</label>
+              <input type="file" id="file" name="File" />
+            </li>
+          </ol>
+        </div>
+        <br />
+        <button>Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
