@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Veterinary Form</legend>
+        <h2>Information of the Animal Owner</h2>
+        <div>
+          <section>
+            <label for="name">First Name:</label>
+            <input
+              type="text"
+              placeholder="Chanchal"
+              id="name"
+              name="Name"
+              required
+            />
+          </section>
+          <section>
+            <label for="surname">Last Name:</label>
+            <input
+              type="text"
+              placeholder="Gupta"
+              id="surname"
+              name="Surname"
+            />
+          </section>
+          <section>
+            <label for="phone">Contact No:</label>
+            <input
+              type="tel"
+              placeholder="123-456-7890"
+              id="phone"
+              name="Phone"
+              required
+            />
+          </section>
+        </div>
+        <h2>Gender</h2>
+        <div>
+          <section>
+            <input type="radio" name="Gender" id="male" value="Male" />
+            <label for="male">Male</label>
+          </section>
+          <section>
+            <input type="radio" name="Gender" id="female" value="Female" />
+            <label for="female">Female</label>
+          </section>
+          <section>
+            <input type="radio" name="Gender" id="other" value="Other" />
+            <label for="other">Other</label>
+          </section>
+        </div>
+        <h2>Detailed Disease Description</h2>
+        <div>
+          <textarea
+            name="description"
+            placeholder="Write the description here..."
+            required
+            rows="5"
+            cols="30"
+          ></textarea>
+        </div>
+        <div>
+          <button>Submit</button>
+        </div>
+      </fieldset>
+    </form>
+    <a href="Challenge_Part1.html" target="_blank">Home Page</a>
+  </body>
+</html>
