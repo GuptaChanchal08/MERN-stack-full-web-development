@@ -1,6 +1,9 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+/* Children's Pseudo Classes */
 h1 {
   color: rgb(221, 74, 98);
-  font-family: "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: 800;
 }
@@ -22,4 +25,23 @@ li:last-child {
 li:nth-child(2) {
   color: rgb(57, 3, 3);
   font-weight: 1000;
+}
+a {
+  font-size: 20px;
+}
+/* Link Pseudo-Classes */
+a:link {
+  color: rgb(142, 16, 16);
+  text-decoration: none;
+}
+a:visited {
+  color: blue;
+}
+/* Status Pseudo-Classes */
+a:hover {
+  color: rgb(8, 97, 100);
+  text-decoration: underline dotted rgb(28, 194, 155);
+}
+a:active {
+  background-color: rgb(220, 123, 5);
 }
