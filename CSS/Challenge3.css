@@ -1,0 +1,118 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+  width: 95%;
+}
+.top-header{
+  background-color: bisque;
+  padding: 15px;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0;
+}
+.header {
+  text-align: center;
+}
+.Car-logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.Car-logo img {
+  height: auto;
+  width: 50%;
+  max-width: 550px;
+  min-width: 450px;
+  margin: 15px 0;
+}
+.Car-logo p {
+  color: red;
+  font-weight: bold;
+}
+.Details a {
+  text-decoration: none;
+}
+.Details a:hover {
+  font-size: 18px;
+  text-decoration: underline;
+  color: red;
+}
+.colors {
+  margin: 20px 0px;
+}
+.color {
+  margin-right: 20px;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.vehicle_red {
+  background-color: red;
+  box-shadow: 2px 2px 3px red;
+}
+.vehicle_black {
+  background-color: black;
+  box-shadow: 2px 2px 3px black;
+}
+.vehicle_white {
+  background-color: white;
+  box-shadow: 2px 2px 3px black;
+}
+.vehicle_yellow {
+  background-color: orange;
+  box-shadow: 2px 2px 3px orange;
+}
+.items {
+  margin-top: 5px;
+}
+.items li {
+  margin-left: 30px;
+}
+.items li:nth-child(odd) {
+  color: purple;
+  font-weight: 500;
+}
+.button {
+  text-align: center;
+}
+button {
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  width: 150px;
+  text-align: center;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  color: black;
+  background-color: white;
+  font-weight: 700;
+}
+.nav {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: bisque;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+.nav:hover {
+  background-color: aquamarine;
+}
+footer {
+  color: rgba(61, 61, 60, 0.758);
+  text-align: center;
+  border-top: 2px solid rgb(89, 88, 88);
+  padding: 5px;
+  margin-top: 20px;
+  background-color: antiquewhite;
+}
