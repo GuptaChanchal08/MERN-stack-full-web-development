@@ -9,6 +9,8 @@ h2{
   margin: 20px;
   color: rgba(0, 0, 255, 0.745);
   font-family: 'Times New Roman', Times, serif;
+  display: inline-block;
+  border-bottom: 1px solid rgba(0, 0, 255, 0.477);
 }
 .keyframes{
   margin: 20px;
