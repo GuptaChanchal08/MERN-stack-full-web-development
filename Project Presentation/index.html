@@ -16,12 +16,12 @@
     <link rel="stylesheet" href="style.css" />
     <title>Project Presentation</title>
   </head>
-  <body>
+  <body id="body">
     <!-- ?Nav bar -->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a href="#" class="navbar-brand">
-          <img src="logo.jpg" alt="Visionary" />
+          <img src="oak.png" alt="Oak" />
         </a>
         <button
           type="button"
@@ -29,13 +29,408 @@
           aria-label="Toggler Navigation"
           aria-expanded="false"
           aria-controls="navMenu"
+          data-bs-target="#navMenu"
+          data-bs-toggle="collapse"
         >
-      <span class="navbar-toggler-icon"></span></button>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="navbar-item">
+              <a href="#home" class="nav-link" aria-current="page">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#student" class="nav-link">Student</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#question" class="nav-link">Question</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <div></div>
-    <main></main>
-    <footer></footer>
+    <!-- ?Carousel -->
+    <div
+      class="carousel slide carousel-fade container"
+      id="mySlide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          class="active"
+          data-bs-target="#mySlide"
+          data-bs-slide-to="0"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#mySlide"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#mySlide"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="slider1.jpg" alt="Slider1" class="d-block w-100" />
+          <div class="carousel-caption d-none d-sm-block">
+            <h5>Popular Education</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+            <div>
+              <button class="btn btn-danger">Start</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slider2.jpg" alt="Slider2" class="d-block w-100" />
+          <div class="carousel-caption d-none d-sm-block">
+            <h5>Successfull Future</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+            <div>
+              <button class="btn btn-danger">Start</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slider3.jpg" alt="Slider3" class="d-block w-100" />
+          <div class="carousel-caption d-none d-sm-block">
+            <h5>Dream Job</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+            <div>
+              <button class="btn btn-danger">Start</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="carousel-control-prev"
+          data-bs-target="#mySlide"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          type="button"
+          class="carousel-control-next"
+          data-bs-target="#mySlide"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- ?Main section -->
+    <main class="text-center">
+      <section id="about" class="container bg-light my-5 p-3">
+        <h1 class="display-6 text-danger mb-4 fw-normal">ABOUT US</h1>
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-6" col-lg-4>
+            <i class="bi bi-globe-americas"></i>
+            <h4>Online Courses</h4>
+            <p>
+              An online course on an e-learning platform offers flexible,
+              interactive learning through videos, readings, and quizzes. Learn
+              at your own pace or with an instructor, anytime, anywhere, and
+              earn certificates to boost your career.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-6" col-lg-4>
+            <i class="bi bi-headset"></i>
+            <h4>Full-time Mentoring</h4>
+            <p>
+              As a full-time mentor on an e-learning platform, we guide and
+              support learners, answer their questions, keep them motivated, and
+              help them achieve their goals through personalized assistance and
+              encouragement.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-6" col-lg-4>
+            <i class="bi bi-book-half"></i>
+            <h4>Learn Yourself</h4>
+            <p>
+              **Learn-Yourself** is a self-directed learning approach where
+              individuals acquire knowledge independently using various
+              resources like books, videos, and online courses.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="instructors" class="container bg-dark my-5 p-3">
+        <h2 class="display-6 text-danger fw-normal">INSTRUCTORS</h2>
+        <div class="row g-3 justify-content-center">
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="teacher1.jpg" alt="Teacher" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Josh Ren</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                  odio?
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="bi bi-facebook text-danger"></i>
+                  <i class="bi bi-instagram text-danger"></i>
+                  <i class="bi bi-twitter text-danger"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="teacher2.jpg" alt="Teacher" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Bob Ken</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                  odio?
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="bi bi-facebook text-danger"></i>
+                  <i class="bi bi-instagram text-danger"></i>
+                  <i class="bi bi-twitter text-danger"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="teacher3.jpg" alt="Teacher" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Mary Elizabeth</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                  odio?
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="bi bi-facebook text-danger"></i>
+                  <i class="bi bi-instagram text-danger"></i>
+                  <i class="bi bi-twitter text-danger"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="teacher4.jpg" alt="Teacher" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Ruby D'souza</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                  odio?
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="bi bi-facebook text-danger"></i>
+                  <i class="bi bi-instagram text-danger"></i>
+                  <i class="bi bi-twitter text-danger"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="teacher5.jpg" alt="Teacher" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Pravine Gupta</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                  odio?
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="bi bi-facebook text-danger"></i>
+                  <i class="bi bi-instagram text-danger"></i>
+                  <i class="bi bi-twitter text-danger"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="teacher6.jpg" alt="Teacher" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Prakash Mehta</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                  odio?
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="bi bi-facebook text-danger"></i>
+                  <i class="bi bi-instagram text-danger"></i>
+                  <i class="bi bi-twitter text-danger"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="student" class="container bg-light my-5 p-3">
+        <h2 class="display-6 text-danger fw-normal">OUR STUDENT</h2>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+              pariatur mollitia voluptatem laboriosam esse natus vel ipsam
+              fugiat consequatur cumque, suscipit nulla hic architecto voluptate
+              incidunt animi quidem? Vitae, illo.
+            </p>
+            <button class="btn btn-danger">Learn More</button>
+          </div>
+          <div class="col-md-6">
+            <img src="students1.png" alt="Student" class="w-75" />
+          </div>
+        </div>
+      </section>
+      <section id="question" class="container bg-light my-5 p-3">
+        <div class="row align-items-center py-2">
+          <h2 class="display-6 text-danger fw-normal">
+            Frequently Asked Questions
+          </h2>
+          <div class="col-md-6 text-center">
+            <div class="accordion" id="accordionId">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="accordionOne">
+                  <button
+                    type="button"
+                    class="accordion-button"
+                    data-bs-target="#one"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="one"
+                  >How many you offer your online courses for free?</button>
+                </h2>
+                <div
+                  class="accordion-collapse collapse"
+                  data-bs-parent="accordionId"
+                  id="one"
+                  aria-labelledby="accordionOne"
+                >
+                  <div class="accordion-body">
+                    <p>At eLearning College, we take pride in welcoming ambitious learners from all backgrounds. Our free online courses can be taken from any location, with no deadlines, no time restrictions, and no fixed study schedules. Upon completion of your course, you will have the option of claiming an endorsed certificate or diploma for an additional fee. However, there is no obligation to do so all of our courses are 100% free of charge.</p>
+                  </div>
+                </div>
+                <h2 class="accordion-header" id="accordionTwo">
+                  <button
+                    type="button"
+                    class="accordion-button"
+                    data-bs-target="#two"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="two"
+                  >Can I take more than one free online courses at the same time?</button>
+                </h2>
+                <div
+                  class="accordion-collapse collapse"
+                  data-bs-parent="accordionId"
+                  id="two"
+                  aria-labelledby="accordionTwo"
+                >
+                  <div class="accordion-body">
+                    <p>You can take only two (2x) of our free online courses as you like, but we ask that you complete your current course before enrolling on your next course. If you change your mind about any course you sign up for before its completion, contact the eLearning College support team to discuss switching to a new programme.</p>
+                  </div>
+                </div>
+                <h2 class="accordion-header" id="accordionThree">
+                  <button
+                    type="button"
+                    class="accordion-button"
+                    data-bs-target="#three"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="three"
+                  >What are the different kinds of certificates you offer?</button>
+                </h2>
+                <div
+                  class="accordion-collapse collapse"
+                  data-bs-parent="accordionId"
+                  id="three"
+                  aria-labelledby="accordionThree"
+                >
+                  <div class="accordion-body">
+                    <p>Upon completion of your free online course, you will have the opportunity to request one of the following certificates as proof of your new skills: 1. An official Course Completion Certificate from eLearning College 2. A CPD Accredited Certificate to boost your CPD profile 3. An Endorsed Certificate issued by the Quality Licence Scheme</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="oak.png" alt="Oak" class="img-fluid" />
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="container bg-light my-5 p-3">
+        <h2 class="display-6 text-danger fw-normal">CONTACT</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique at adipisci nobis quam sapiente.</p>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <i class="bi bi-telephone-fill text-danger"></i>
+            <h4>Telephone</h4>
+            <a href="#">+919999911111</a>
+          </div>
+          <div class="col-md-4">
+            <i class="bi bi-whatsapp text-danger"></i>
+            <h4>Whatsapp</h4>
+            <a href="#">+919999922222</a>
+          </div>
+          <div class="col-md-4">
+            <i class="bi bi-envelope text-danger"></i>
+            <h4>Email</h4>
+            <a href="#">info@gmail.com</a>
+          </div>
+        </div>
+        <form class="row g-3 mt-4">
+          <div class="col-md-6">
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="col-12">
+            <input type="text" class="form-control" id="subject" placeholder="Enter your subject"></input>
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">
+              Address 
+            </label>
+            <textarea id="inputAddress" class="form-control" type="text" placeholder="Enter your address"></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-danger">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="bg-dark text-center text-white p-4">
+      <article>
+        <a href="#"><i class="bi bi-facebook me-3"></i></a>
+        <a href="#"><i class="bi bi-linkedin me-3"></i></a>
+        <a href="#"><i class="bi bi-youtube me-3"></i></a>
+        <a href="#"><i class="bi bi-instagram me-3"></i></a>
+      </article>
+      <article class="p-3">
+        &copy; 
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Copyright by OAK Academy
+      </article>
+    </footer>
+    <a href="#body" class="up-btn"><i class="bi bi-arrow-up"></i></a>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
